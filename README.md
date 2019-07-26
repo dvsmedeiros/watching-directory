@@ -1,13 +1,13 @@
 # Watching Directory
 
 **application.properties**
-
+```
 watch.directory.source=./source
 watch.directory.output=./output
 watch.directory.parse.output.extension=JSON
 watch.directory.events.kind=CREATE,MODIFY,OVERFLOW
 watch.directory.file.supported.extensions=XML,JSON
-
+```
 ```
 @Bean(name = "watchConfiguration")
 public WatchConfiguration getWatchConfiguration() {
