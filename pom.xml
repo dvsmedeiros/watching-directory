@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.muralis</groupId>
+	<artifactId>watching-directory</artifactId>
+	<packaging>pom</packaging>
+	<name>watching-directory-codebase</name>
+	<version>1.0.1-SNAPSHOT</version>
+	<url>https://github.com/dvsmedeiros/watching-directory</url>
+
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.watching-directorying.outputEncoding>UTF-8</project.watching-directorying.outputEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<spring.boot.version>2.0.5.RELEASE</spring.boot.version>
+    	<jackson.version>2.8.6</jackson.version>    	
+		<bce.version>1.0.3-SNAPSHOT</bce.version>
+		<google.guava.version>28.0-jre</google.guava.version>
+	</properties>
+
+	<modules>
+		<module>watching-directory-domain</module>
+		<module>watching-directory-core</module>
+		<module>watching-directory-rest</module>
+		<module>watching-directory-server</module>
+	</modules>
+
+</project>
