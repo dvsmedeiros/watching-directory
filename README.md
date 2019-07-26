@@ -25,15 +25,15 @@ Set<String> events = Arrays.asList(eventsKind)
 		return StandardWatchEventKinds.OVERFLOW.name();
 	}
 	return null;
-})
-.filter(kind -> !Strings.isNullOrEmpty(kind))
-.collect(Collectors.toSet());
+	})
+	.filter(kind -> !Strings.isNullOrEmpty(kind))
+	.collect(Collectors.toSet());
 
-FileExtension extentsion = FileExtension.valueOf(outputExtention) != null
-? FileExtension.valueOf(outputExtention)
-: FileExtension.XML;
+	FileExtension extentsion = FileExtension.valueOf(outputExtention) != null
+	? FileExtension.valueOf(outputExtention)
+	: FileExtension.XML;
 
-return new WatchConfiguration(Paths.get(source), Paths.get(output), events, new HashSet<String>(Arrays.asList(supportedExtentions)), extentsion);
+	return new WatchConfiguration(Paths.get(source), Paths.get(output), events, new HashSet<String>(Arrays.asList(supportedExtentions)), extentsion);
 }
 ```
   
