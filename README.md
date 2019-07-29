@@ -8,7 +8,7 @@ watch.directory.parse.output.extension=JSON
 watch.directory.events.kind=CREATE,MODIFY,OVERFLOW
 watch.directory.file.supported.extensions=XML,JSON
 ```
-```
+```java
 @Bean(name = "watchConfiguration")
 public WatchConfiguration getWatchConfiguration() {
 Set<String> events = Arrays.asList(eventsKind)
@@ -37,7 +37,7 @@ Set<String> events = Arrays.asList(eventsKind)
 }
 ```
   
-```
+```java
 @Bean(name = "watchDirectory")
 @Autowired
 public WatchDirectory getWatchDirectory() {
