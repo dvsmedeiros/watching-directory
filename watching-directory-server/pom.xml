@@ -25,7 +25,7 @@
 		<java.version>1.8</java.version>
 		<bce.version>1.0.3-SNAPSHOT</bce.version>
 		<watching.directory.version>1.0.1-SNAPSHOT</watching.directory.version>
-		<google.guava.version>28.0-jre</google.guava.version>		
+		<google.guava.version>29.0-jre</google.guava.version>		
 	</properties>
 
 	<dependencies>
